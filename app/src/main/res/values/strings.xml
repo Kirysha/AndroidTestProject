@@ -7,4 +7,5 @@
     <string name="select">Один ответ</string>
     <string name="several_options">Два ответа</string>
     <string name="complement">Текстовый ответ</string>
+    <string name="error_login_passwd_undefined">Ошибка не правильный пароль</string>
 </resources>
