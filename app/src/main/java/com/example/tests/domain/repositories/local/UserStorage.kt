@@ -10,6 +10,8 @@ import io.realm.Realm
 import javax.inject.Inject
 
 class UserStorage {
+
+
     private var user: User? = null
 
     @Inject

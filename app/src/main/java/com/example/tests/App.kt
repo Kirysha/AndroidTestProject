@@ -2,9 +2,8 @@ package com.example.tests
 
 import android.app.Application
 import android.content.Context
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import com.example.tests.domain.di.components.IAppComponent
+import com.example.tests.domain.di.components.AppComponent
+import com.example.tests.domain.di.components.DaggerAppComponent
 import io.realm.Realm
 import io.realm.RealmConfiguration
 
@@ -12,7 +11,7 @@ class App : Application() {
 
     companion object {
         lateinit var appContext:Context
-        lateinit var appComponent: IAppComponent
+        lateinit var appComponent: AppComponent
     }
 
     override fun onCreate() {

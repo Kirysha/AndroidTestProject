@@ -1,7 +1,8 @@
 package com.soft.eac.thedepartmentgl.base
 
-import com.soft.eac.hardinscientific.base.IRestApi
-import com.soft.eac.hardinscientific.base.IRestClient
+
+import com.example.tests.base.IRestApi
+import com.example.tests.base.IRestClient
 import java.lang.reflect.ParameterizedType
 
 /**
