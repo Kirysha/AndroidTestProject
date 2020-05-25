@@ -3,8 +3,8 @@ package com.example.tests.presentation.credentials.auth
 import com.example.tests.base.SubRX
 import com.example.tests.domain.repositories.UserRepository
 import com.example.tests.presentation.main.MainActivity
-import moxy.InjectViewState
-import moxy.MvpPresenter
+import com.arellomobile.mvp.InjectViewState
+import com.arellomobile.mvp.MvpPresenter
 import javax.inject.Inject
 
 @InjectViewState

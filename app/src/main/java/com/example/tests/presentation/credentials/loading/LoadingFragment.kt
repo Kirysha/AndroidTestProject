@@ -4,8 +4,8 @@ import com.example.tests.App
 import com.example.tests.R
 import com.example.tests.base.ABaseFragment
 import com.example.tests.presentation.credentials.ICredentialsRouter
-import moxy.presenter.InjectPresenter
-import moxy.presenter.ProvidePresenter
+import com.arellomobile.mvp.presenter.InjectPresenter
+import com.arellomobile.mvp.presenter.ProvidePresenter
 import javax.inject.Inject
 
 class LoadingFragment : ABaseFragment(), ILoadingView {

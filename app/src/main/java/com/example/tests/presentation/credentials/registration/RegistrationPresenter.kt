@@ -1,11 +1,13 @@
 package com.example.tests.presentation.credentials.registration
 
+import com.arellomobile.mvp.InjectViewState
 import com.example.tests.base.SubRX
 import com.example.tests.domain.repositories.UserRepository
 import com.example.tests.presentation.main.MainActivity
-import moxy.MvpPresenter
+import com.arellomobile.mvp.MvpPresenter
 import javax.inject.Inject
 
+@InjectViewState
 class RegistrationPresenter : MvpPresenter<IRegistrationView> {
 
     private val userRepository: UserRepository

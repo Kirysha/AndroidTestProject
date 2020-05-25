@@ -8,8 +8,8 @@ import com.example.tests.base.ABaseFragment
 import com.example.tests.base.IBaseView
 import kotlinx.android.synthetic.main.fragment_auth.*
 import kotlinx.android.synthetic.main.fragment_registration.*
-import moxy.presenter.InjectPresenter
-import moxy.presenter.ProvidePresenter
+import com.arellomobile.mvp.presenter.InjectPresenter
+import com.arellomobile.mvp.presenter.ProvidePresenter
 import javax.inject.Inject
 
 class RegistrationFragment: ABaseFragment(), IRegistrationView {
@@ -30,7 +30,7 @@ class RegistrationFragment: ABaseFragment(), IRegistrationView {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        btnRegistration.setOnClickListener {
+        rBtn.setOnClickListener {
             presenter.registration("${rLogin.text}", "${rPass.text}")
         }
     }

@@ -1,15 +1,16 @@
 package com.example.tests.base
 
-import moxy.MvpView
-import moxy.viewstate.strategy.alias.AddToEnd
+import com.arellomobile.mvp.MvpView
+//import moxy.MvpView
+//import moxy.viewstate.strategy.alias.AddToEnd
 
-interface IBaseView:MvpView {
-    @AddToEnd
+interface IBaseView: MvpView {
+
     fun lock()
-    @AddToEnd
+
     fun unLock()
-    @AddToEnd
+
     fun onSuccess(message: String)
-    @AddToEnd
+
     fun onError(message: String)
 }

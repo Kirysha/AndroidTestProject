@@ -1,9 +1,9 @@
 package com.example.tests.presentation.credentials.auth
 
-import moxy.MvpView
-import moxy.viewstate.strategy.alias.AddToEnd
+import com.arellomobile.mvp.MvpView
+
 
 interface ILoadingView : MvpView {
-    @AddToEnd
+
     fun showAuth()
 }

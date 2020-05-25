@@ -1,11 +1,13 @@
 package com.example.tests.presentation.credentials.auth
 
 import android.os.Handler
+import com.arellomobile.mvp.InjectViewState
 import com.example.tests.domain.repositories.UserRepository
 import com.example.tests.presentation.main.MainActivity
-import moxy.MvpPresenter
+import com.arellomobile.mvp.MvpPresenter
 import javax.inject.Inject
 
+@InjectViewState
 class LoadingPresenter : MvpPresenter<ILoadingView> {
 
     private val userRepository: UserRepository
